@@ -1,0 +1,190 @@
+.prices {
+    @include container;
+    margin-bottom: 42px;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @include media-tablet {
+        margin-bottom: 85px;
+    }
+
+    @include media-desktop {
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 23px;
+        }
+    }
+}
+
+.price-card {
+    max-width: 389px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &__img {
+        width: 100%;
+        margin-bottom: 15px;
+        position: relative;
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-family: "Prompt", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--color-gray1);
+        padding-bottom: 15px;
+        margin-bottom: 26px;
+        border-bottom: 1px solid #e9e9e9;
+
+        h4 {
+            padding-left: 20px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-bottom: 28px;
+    }
+
+    &__subtitle {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--color-gray1);
+        margin-bottom: 15px;
+    }
+
+    &__number,
+    &__area {
+        display: inline-block;
+        font-family: "Prompt", sans-serif;
+        font-style: normal;
+        line-height: 24px;
+        color: var(--color-green1);
+        margin-right: 10px;
+    }
+
+    &__number {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    &__area {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    &__info {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(145, 151, 147, 0.2);
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        color: var(--color-green1);
+        cursor: pointer;
+        transition: all ease 0.2s;
+
+        &:hover {
+            background: var(--color-green60);
+            color: var(--color-white);
+        }
+    }
+
+    &__button {
+        max-width: 390px;
+        width: 100%;
+        height: 75px;
+        color: var(--color-white);
+        font-family: "Prompt", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        background: var(--color-green1);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        transition: all ease 0.2s;
+
+        &:hover {
+            background: var(--color-button);
+        }
+    }
+
+    @include media-tablet {
+        margin-right: 28px;
+
+        &__img {
+            margin-bottom: 30px;
+        }
+    }
+
+    @include media-desktop {
+        margin-right: 0;
+    }
+}
+
+
+
+.price-card__modal {
+    position: absolute;
+    left: 0;
+    bottom: -47px;
+    max-width: 300px;
+    width: 100%;
+    background: #f0fff6;
+    padding: 29px 28px 14px;
+    display: none;
+    z-index: 1;
+
+    &-li {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        margin-bottom: 14px;
+        span {
+            color: var(--color-black);
+            font-weight: bold;
+        }
+    }
+
+    &-cross {
+        @include bg;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    @include media-tablet {
+        max-width: 320px;
+    }
+
+    @include media-custom(1170px) {
+        max-width: 330px;
+    }
+
+    @include media-desktop {
+        max-width: 352px;
+    }
+}
+
+.price-card__modal.price-card__modal-visible {
+    display: block;
+}

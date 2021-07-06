@@ -1,0 +1,12 @@
+include ../mixins/section-title
+
+- const clients = [{client: "Лукойл", img: "luk"},{client: "Макси", img: "maxi"},{client: "Молочный комбинат", img: "milk"},{client: "Кировспецмонтаж", img: "spez"},{client: "УК Радуга  ", img: "rainbow"},]
+
+section.clients
+    .clients__inner
+        +section_title("Наши клиенты", true)
+        .clients__items
+            each client in clients
+                .clients__item
+                    .clients__img(class=`--svg__${client.img}`)
+                    p.clients__descr= client.client

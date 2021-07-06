@@ -1,0 +1,123 @@
+.cost {
+    display: none;
+    margin-bottom: 50px;
+    @include container;
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-title {
+        display: flex;
+        margin-bottom: 37px;
+
+        &:before {
+            content: "";
+            width: 6px;
+            height: 30px;
+            background: var(--color-green1);
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
+
+        h2 {
+            @extend %h4;
+            padding-left: 14px;
+            font-size: 24px;
+        }
+    }
+
+    @include media-tablet {
+        margin-bottom: 107px;
+
+        &-title {
+            margin-bottom: 74px;
+
+            h2 {
+                font-size: 34px;
+            }
+        }
+    }
+}
+
+.cost-items {
+    display: flex;
+    flex-direction: column;
+
+    &-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        select {
+            width: 272px;
+            height: 56px;
+            border: 0;
+            outline: 0;
+            padding: 16px 23px;
+            background: #f4f4f4;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        input {
+            width: 272px;
+            height: 56px;
+            border: 0;
+            outline: 0;
+            padding: 16px 23px;
+            background: #f4f4f4;
+        }
+
+        p {
+            margin-bottom: 19px;
+            font-family: "Prompt", sans-serif;
+            font-size: 16px;
+            color: var(--color-grya1);
+        }
+    }
+
+    a {
+        align-self: center;
+        display: inline-block;
+        @extend %body16-regular;
+        margin-bottom: 23px;
+        color: var(--color-gray1);
+        transition: all ease 0.2s;
+
+        &:hover {
+            color: var(--color-green1);
+        }
+    }
+
+    input[value] {
+        width: 323px;
+        height: 62px;
+        background: var(--color-green1);
+        color: var(--color-white);
+        @extend %body16-propmt;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all ease 0.2s;
+        align-self: center;
+
+        &:hover {
+            background: var(--color-green3C);
+        }
+    }
+}

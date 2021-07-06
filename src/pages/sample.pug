@@ -1,0 +1,11 @@
+extends common/layout
+
+block vars
+  -const pageTitle="Sample page"
+
+block content
+    .wrapper
+        include includes/templates/header
+        .main
+            include includes/sample/gallery
+        include includes/templates/footer

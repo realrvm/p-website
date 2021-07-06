@@ -1,0 +1,181 @@
+.jobs__arrows {
+    display: flex;
+    justify-content: space-between;
+    @extend %body16-regular;
+    color: #727272;
+    cursor: pointer;
+    width: 310px;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    &-prev {
+        cursor: pointer;
+        img {
+            display: inline-block;
+            width: 24px;
+        }
+        span {
+            margin-left: 13px;
+        }
+    }
+
+    &-next {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img {
+            display: inline-block;
+            width: 24px;
+        }
+
+        span {
+            margin-right: 13px;
+        }
+    }
+
+    @include media-desktop {
+        margin-bottom: 50px;
+    }
+}
+
+.jobs {
+    margin-bottom: 45px;
+    @include container;
+
+    &__sample {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__imgs {
+        display: none;
+        margin-bottom: 10px;
+
+        &-item {
+            margin-bottom: 10px;
+            border: 2px solid transparent;
+
+            &.active {
+                border: 2px solid var(--color-green1);
+            }
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 13px;
+        }
+    }
+
+    &__content {
+        &-title {
+            font-family: "Oswald", sans-serif;
+            font-weight: bold;
+            font-size: 22px;
+            color: var(--color-gray1);
+            margin-bottom: 27px;
+        }
+
+        &-item {
+            font-family: "Prompt", sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            color: var(--color-gray1);
+            margin-bottom: 13px;
+        }
+    }
+
+    &__price {
+        display: block;
+        position: relative;
+        padding-top: 30px;
+        margin-top: 40px;
+        @extend %body16-regular;
+        margin-bottom: 21px;
+
+        &-number {
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--color-green3C);
+            margin-left: 4px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: #c9c9c9;
+            width: 300px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__btn {
+        width: 242px;
+        height: 56px;
+        background: var(--color-green3C);
+        color: var(--color-white);
+        @extend %body16-propmt;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        transition: all ease 0.2s;
+
+        &:hover {
+            background: var(--color-green60);
+        }
+    }
+
+    &__show-all {
+        display: block;
+        font-family: "Prompt", sans-serif;
+        font-size: 16px;
+        text-decoration-line: underline;
+        width: 190px;
+        margin: 0 auto;
+        color: var(--color-black);
+        transition: all ease 0.2s;
+
+        &:hover {
+            color: var(--color-green1);
+            text-decoration: none;
+        }
+    }
+
+    @include media-tablet {
+        margin-bottom: 90px;
+
+        &__sample {
+            flex-direction: row;
+        }
+
+        &__card {
+            flex-direction: row;
+            margin-bottom: 54px;
+        }
+
+        &__pict {
+            margin-right: 46px;
+        }
+
+        &__imgs {
+            margin-bottom: 0;
+            display: block;
+
+            &-item {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

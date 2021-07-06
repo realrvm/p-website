@@ -1,0 +1,18 @@
+include ../mixins/section-title
+
+- const requisites_list = [{descr: "Полное наименование:", content: "Индивидуальный предприниматель Фамилия Имя Отчество"},{descr: "Сокращенное наименование:", content: "ИП Фамиля Имя  Отчество"},{descr: "Инн:", content: "402000000000"},{descr: "Юридический адрес:", content: "г. *, ул.профсоюзная 1а, офис 605"},{descr: "Фактический адрес:", content: "г. *, ул.профсоюзная 1а, офис 605"},{descr: "Электронная почта:", content: "Info@pokos.ru"},{descr: "Сайт:", content: "pokos.ru"},]
+
+
+mixin requisites(descr, content)
+    li.requisites__content
+        p.requisites__descr= descr
+        p.requisites__contents= content
+
+
+.requisites
+    .requisites__inner
+        +section_title("Реквизиты", true)
+        .requisites__list
+            ul.requisites__ul
+                each req in requisites_list
+                    +requisites(req.descr, req.content)

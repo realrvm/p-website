@@ -1,0 +1,21 @@
+.wrapper {
+    min-height: 100%;
+}
+
+.main {
+    width: 100%;
+    flex: 1;
+}
+
+.footer {
+    flex: 0;
+}
+
+.container {
+    @include container
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}

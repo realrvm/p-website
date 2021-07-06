@@ -1,0 +1,30 @@
+include ../mixins/section-title
+
+mixin price-card(img, title, descr,  price)
+    .price-card
+        .price-card__img
+            img(src=`./assets/img/content/${img}.webp` alt="price")
+            .price-card__modal(data-price_modal)
+                ul.price-card__modal-ul
+                    li.price-card__modal-li <span>Высота травы:</span> 15 - 40 см
+                    li.price-card__modal-li <span>Тип травы:</span> Газонная трава
+                    li.price-card__modal-li <span>Уборка:</span> Оплачивается отдельно
+                    li.price-card__modal-li <span>Скидка:</span> Для постоянных клиентов
+                .price-card__modal-cross.--svg__x
+        h4.price-card__title= title
+        .price-card__bottom
+            .price-card__price
+                h5.price-card__subtitle= descr
+                p.price-card__number= price
+                span.price-card__area руб сотка
+            .price-card__info(data-price_card_info)
+                | ?
+        button.price-card__button Подробнее
+
+- const prices = [{img: "price1", title: "Покос травы триммером", descr:"Цена покоса:", price: 250},{img: "price2", title: "Покос бурьяна тримером", descr:"Цена покоса:", price: 270},{img: "price3", title: "Покос травы газонокосилкой", descr:"Цена покоса:", price: 250},{img: "price4", title: "Вырубка мелколесья", descr:"Цена вырубки:", price: 800},{img: "price5", title: "Уборка скошеной травы", descr:"Уборка травы граблями в кучу:", price: 200}]
+
+.prices
+    +section_title("Цены на покос травы", true)
+    .prices__content
+        each price in prices
+            +price-card(price.img, price.title, price.descr, price.price)

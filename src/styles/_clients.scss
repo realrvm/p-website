@@ -1,0 +1,49 @@
+.clients {
+  margin-bottom: 38px;
+
+  &__inner {
+      @include container;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__img {
+      @include bg;
+      width: 199px;
+      height: 91px;
+  }
+
+  &__descr {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  @include media-tablet {
+    margin-bottom: 129px;
+
+    &__items {
+      justify-content: space-between;
+    }
+  }
+
+  include media-desktop {
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+}

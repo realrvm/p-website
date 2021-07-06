@@ -1,0 +1,19 @@
+include ../mixins/section-title
+- confs = [{img: "cal", descr: "Большой опыт", count: "01"},{img: "delivery", descr: "Оперативный выезд", count: "02"},{img: "note", descr: "Фиксированная стоимость", count: "03"},{img: "check", descr: "Оплата любым способом", count: "04"},{img: "map", descr: "Довезем до участка",count : "05"}]
+
+.confidence
+    .confidence__inner
+        +section_title("Почему клиенты доверяют нам", true)
+        .confidence__content
+            each conf in confs
+                .confidence__content-item
+                    .confidence__content-descr
+                        span #{conf.count}
+                        .confidence__content-dots
+                            .confidence__content-dot
+                            .confidence__content-dot
+                            .confidence__content-dot
+                        .confidence__content-img(class=`--svg__${conf.img}`)
+                        p.confidence__content-proposal= conf.descr
+        p.confidence__note
+            | Всю работу на участке делают наши мастера, они обучены,вежливы не пьют и заинтересованы в решении вашей задачи

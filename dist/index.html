@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Main page</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;family=Open+Sans:wght@300;700&amp;family=Oswald:wght@700&amp;family=Prompt:wght@400;700&amp;family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+  </head>
+  <body>
+    <div class="wrapper flex --dir-col">
+      <header class="header">
+        <div class="header__inner container">
+          <div class="header__menu">
+            <div class="header__logo"><a class="header__logo-link" href="/">
+                <div class="header__logo-img --svg__logo"></div></a></div>
+            <nav class="header__nav" data-headernav>
+              <div class="header__nav-img --svg__nav"></div><span class="header__nav-descr">Виды покоса</span>
+              <div class="header-modal" data-headermodal>
+                <div class="header-modal__inner">
+                  <ul class="header-modal__ul">
+                    <li><a class="header-modal__type" href="*">Покос травы триммером</a></li>
+                    <li><a class="header-modal__type" href="*">Покос бурьяна триммером</a></li>
+                    <li><a class="header-modal__type" href="*">Покос газонокосилкой</a></li>
+                    <li><a class="header-modal__type" href="*">Вырубка мелколесья</a></li>
+                    <li><a class="header-modal__type" href="*">Уборка скошеной травы</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="header__call"><a class="header__call-link" href="*">Заказать звонок</a>
+            <div class="header__call-number">
+              <svg class="header__call-imgs" width="16" height="17">
+                <use xlink:href="./assets/img/sprite.svg#phone"></use>
+              </svg><span class="header__call-descr">8 922 000 00 00</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="banner" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/banner-bg.webp')">
+          <div class="banner__descr">
+            <h1 class="banner__title">Профессиональный Покос травы в Москве</h1>
+            <p class="banner__subtitle">Москве и в 60 км от города</p>
+            <button class="banner__info" data-banner_modal>i</button>
+          </div>
+        </section>
+        <div class="banner-modal">
+          <div class="banner-modal__inner">
+            <div class="banner-modal__close">+</div>
+            <div class="banner-modal__descr">
+              <h3 class="banner-modal__title">Профессиональный покос травы в Подмосковье</h3>
+              <p class="banner-modal__text">Если в вашем ведении большая территория земли, то в осенне-летний период на ней надо регулярно косить траву. Не важно, представляете вы организацию или выступаете как частный землевладелец. Мы будем рады предложить постоянное обслуживание участка. Скашивание травы производится 1-2 раза в месяц, в зависимости от её скорости роста и требований заказчика. Работаем за наличный и безналичный расчет.</p>
+              <p class="banner-modal__text">Вы приобрели новый участок и первым делом решили окосить его? Мы предлагаем скос травы и расчистку территории под строительство. Даже если вы не планируете застраивать участок в ближайшее время, от бурьяна лучше избавиться. Ведь сухостой может стать причиной пожара!</p>
+              <p class="banner-modal__text">Компания * производит профессиональный покос травы и кустарников любой высоты в Подмосковье.</p>
+              <div class="banner-modal__imgs"><img class="banner-modal__img" src="./assets/img/content/pokos1.webp"><img class="banner-modal__img" src="./assets/img/content/pokos2.webp"><img class="banner-modal__img" src="./assets/img/content/pokos3.webp"></div>
+            </div>
+            <div class="banner-modal__prices">
+              <h3 class="banner-modal__title">Сколько стоит скосить траву</h3>
+              <p class="banner-modal__text">
+                Цена работ за сотку или квадратный метр зависит от способа и площади окашиваемого участка. Выгоднее
+                заказывать услугу в комплексе с удалением старых деревьев, вспашкой земли и вывозом образовавшегося
+                мусора. При подписании договора на регулярное обслуживание предоставляется скидка, а значит, цена покоса
+                будет ещё меньше. Ориентировочные расценки приведены в таблице ниже.
+                
+              </p>
+              <table border="1">
+                <tr>
+                  <th>Вид работ</th>
+                  <th>Единицы изменения</th>
+                  <th>Цена, рублей</th>
+                </tr>
+                <tr>
+                  <td>Покос травы или сухого бурьяна</td>
+                  <td>кв.м.</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Стрижка газона колесной газонокосилкой</td>
+                  <td>кв.м.</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Покос травы трактором (на площадях от 1 Га)</td>
+                  <td>кв.м.</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Сбор травы граблями (если требуется)</td>
+                  <td>кв.м.</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Погрузка и вывоз скошенной травы контейнером объемом (за штуку)</td>
+                  <td>шт.</td>
+                  <td>12,500</td>
+                </tr>
+                <tr>
+                  <td>Погрузка и вывоз скошенной травы контейнером объемом 27 куб. м. (за штуку)</td>
+                  <td>шт.</td>
+                  <td>35.500</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="prices">
+                  <div class="section-title --margin-bottom">
+                    <h3 class="section-title__name">Цены на покос травы</h3>
+                  </div>
+          <div class="prices__content">
+                    <div class="price-card">
+                      <div class="price-card__img"><img src="./assets/img/content/price1.webp" alt="price">
+                        <div class="price-card__modal" data-price_modal>
+                          <ul class="price-card__modal-ul">
+                            <li class="price-card__modal-li"><span>Высота травы:</span> 15 - 40 см</li>
+                            <li class="price-card__modal-li"><span>Тип травы:</span> Газонная трава</li>
+                            <li class="price-card__modal-li"><span>Уборка:</span> Оплачивается отдельно</li>
+                            <li class="price-card__modal-li"><span>Скидка:</span> Для постоянных клиентов</li>
+                          </ul>
+                          <div class="price-card__modal-cross --svg__x"></div>
+                        </div>
+                      </div>
+                      <h4 class="price-card__title">Покос травы триммером</h4>
+                      <div class="price-card__bottom">
+                        <div class="price-card__price">
+                          <h5 class="price-card__subtitle">Цена покоса:</h5>
+                          <p class="price-card__number">250</p><span class="price-card__area">руб сотка</span>
+                        </div>
+                        <div class="price-card__info" data-price_card_info>?</div>
+                      </div>
+                      <button class="price-card__button">Подробнее</button>
+                    </div>
+                    <div class="price-card">
+                      <div class="price-card__img"><img src="./assets/img/content/price2.webp" alt="price">
+                        <div class="price-card__modal" data-price_modal>
+                          <ul class="price-card__modal-ul">
+                            <li class="price-card__modal-li"><span>Высота травы:</span> 15 - 40 см</li>
+                            <li class="price-card__modal-li"><span>Тип травы:</span> Газонная трава</li>
+                            <li class="price-card__modal-li"><span>Уборка:</span> Оплачивается отдельно</li>
+                            <li class="price-card__modal-li"><span>Скидка:</span> Для постоянных клиентов</li>
+                          </ul>
+                          <div class="price-card__modal-cross --svg__x"></div>
+                        </div>
+                      </div>
+                      <h4 class="price-card__title">Покос бурьяна тримером</h4>
+                      <div class="price-card__bottom">
+                        <div class="price-card__price">
+                          <h5 class="price-card__subtitle">Цена покоса:</h5>
+                          <p class="price-card__number">270</p><span class="price-card__area">руб сотка</span>
+                        </div>
+                        <div class="price-card__info" data-price_card_info>?</div>
+                      </div>
+                      <button class="price-card__button">Подробнее</button>
+                    </div>
+                    <div class="price-card">
+                      <div class="price-card__img"><img src="./assets/img/content/price3.webp" alt="price">
+                        <div class="price-card__modal" data-price_modal>
+                          <ul class="price-card__modal-ul">
+                            <li class="price-card__modal-li"><span>Высота травы:</span> 15 - 40 см</li>
+                            <li class="price-card__modal-li"><span>Тип травы:</span> Газонная трава</li>
+                            <li class="price-card__modal-li"><span>Уборка:</span> Оплачивается отдельно</li>
+                            <li class="price-card__modal-li"><span>Скидка:</span> Для постоянных клиентов</li>
+                          </ul>
+                          <div class="price-card__modal-cross --svg__x"></div>
+                        </div>
+                      </div>
+                      <h4 class="price-card__title">Покос травы газонокосилкой</h4>
+                      <div class="price-card__bottom">
+                        <div class="price-card__price">
+                          <h5 class="price-card__subtitle">Цена покоса:</h5>
+                          <p class="price-card__number">250</p><span class="price-card__area">руб сотка</span>
+                        </div>
+                        <div class="price-card__info" data-price_card_info>?</div>
+                      </div>
+                      <button class="price-card__button">Подробнее</button>
+                    </div>
+                    <div class="price-card">
+                      <div class="price-card__img"><img src="./assets/img/content/price4.webp" alt="price">
+                        <div class="price-card__modal" data-price_modal>
+                          <ul class="price-card__modal-ul">
+                            <li class="price-card__modal-li"><span>Высота травы:</span> 15 - 40 см</li>
+                            <li class="price-card__modal-li"><span>Тип травы:</span> Газонная трава</li>
+                            <li class="price-card__modal-li"><span>Уборка:</span> Оплачивается отдельно</li>
+                            <li class="price-card__modal-li"><span>Скидка:</span> Для постоянных клиентов</li>
+                          </ul>
+                          <div class="price-card__modal-cross --svg__x"></div>
+                        </div>
+                      </div>
+                      <h4 class="price-card__title">Вырубка мелколесья</h4>
+                      <div class="price-card__bottom">
+                        <div class="price-card__price">
+                          <h5 class="price-card__subtitle">Цена вырубки:</h5>
+                          <p class="price-card__number">800</p><span class="price-card__area">руб сотка</span>
+                        </div>
+                        <div class="price-card__info" data-price_card_info>?</div>
+                      </div>
+                      <button class="price-card__button">Подробнее</button>
+                    </div>
+                    <div class="price-card">
+                      <div class="price-card__img"><img src="./assets/img/content/price5.webp" alt="price">
+                        <div class="price-card__modal" data-price_modal>
+                          <ul class="price-card__modal-ul">
+                            <li class="price-card__modal-li"><span>Высота травы:</span> 15 - 40 см</li>
+                            <li class="price-card__modal-li"><span>Тип травы:</span> Газонная трава</li>
+                            <li class="price-card__modal-li"><span>Уборка:</span> Оплачивается отдельно</li>
+                            <li class="price-card__modal-li"><span>Скидка:</span> Для постоянных клиентов</li>
+                          </ul>
+                          <div class="price-card__modal-cross --svg__x"></div>
+                        </div>
+                      </div>
+                      <h4 class="price-card__title">Уборка скошеной травы</h4>
+                      <div class="price-card__bottom">
+                        <div class="price-card__price">
+                          <h5 class="price-card__subtitle">Уборка травы граблями в кучу:</h5>
+                          <p class="price-card__number">200</p><span class="price-card__area">руб сотка</span>
+                        </div>
+                        <div class="price-card__info" data-price_card_info>?</div>
+                      </div>
+                      <button class="price-card__button">Подробнее</button>
+                    </div>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="questions__inner">
+            <div class="questions__steps">
+              <h2 class="questions__steps-title">Как мы работаем</h2>
+              <div class="questions__steps-items">
+                <p class="questions__steps-item">Выкашеваем участки от 5 соток</p>
+                <p class="questions__steps-item">Закажи покос и получи оперативную и качествееную работу</p>
+              </div>
+              <h3 class="questions__steps-subtitle">Три простых шага до покоса</h3>
+              <div class="questions__cards">
+                <div class="questions__card">
+                  <div class="questions__card-img --svg__consult"></div>
+                  <p class="questions__card-descr">Консультация</p>
+                  <div class="questions__card-counter">1</div>
+                </div>
+                <div class="questions__card">
+                  <div class="questions__card-img --svg__scythe"></div>
+                  <p class="questions__card-descr">Покос</p>
+                  <div class="questions__card-counter">2</div>
+                </div>
+                <div class="questions__card">
+                  <div class="questions__card-img --svg__wallet"></div>
+                  <p class="questions__card-descr">Прием работ и оплата</p>
+                  <div class="questions__card-counter">3</div>
+                </div>
+              </div>
+            </div>
+            <div class="questions__form">
+              <h3 class="questions__form-title">Остались вопросы?</h3>
+              <h5 class="questions__form-subtitle">Заполните форму!</h5>
+              <p class="questions__form-descr">И получите консультацию специалиста</p>
+              <form class="questions__form-inner">
+                <input class="questions__form-name" type="text" name="name" placeholder="Имя">
+                <input class="questions__form-tel" type="tel" name="tel" placeholder="Телефон">
+                <button class="questions__form-btn">Заказать звонок</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="jobs">
+                  <div class="section-title --margin-bottom">
+                    <h3 class="section-title__name">Наши работы</h3>
+                  </div>
+          <div class="jobs__arrows"></div>
+          <div class="jobs__sample">
+            <div class="jobs-slickwrapper">
+              <div class="jobs__card">
+                <div class="jobs__pict">
+                  <div class="jobs__img"><img class="jobs__bigimg" src="./assets/img/content/jobs-big.webp" alt=""></div>
+                  <div class="jobs__imgs" style="transform: none !important"><img class="jobs__imgs-item active" src="./assets/img/content/jobs1.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs2.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs3.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs4.webp" alt=""></div>
+                </div>
+                <div class="jobs__content">
+                  <h5 class="jobs__content-title">Покос травы в Петрово</h5>
+                  <ul class="jobs__content-lists">
+                    <li class="jobs__content-item">Высота травы: до 20 см</li>
+                    <li class="jobs__content-item">Размер участка: 15 соток</li>
+                    <li class="jobs__content-item">Время работы: 8 часов</li>
+                    <li class="jobs__content-item">Уборка: без уборки</li>
+                    <li class="jobs__content-item">Отдаленность от города: 20 км</li>
+                  </ul>
+                  <div class="jobs__price">Стоимость работ:<span class="jobs__price-number">2500 руб</span></div>
+                  <button class="jobs__btn">Заказать покос</button>
+                </div>
+              </div>
+            </div>
+            <div class="jobs-slickwrapper">
+              <div class="jobs__card">
+                <div class="jobs__pict">
+                  <div class="jobs__img"><img class="jobs__bigimg" src="./assets/img/content/jobs-big.webp" alt=""></div>
+                  <div class="jobs__imgs" style="transform: none !important"><img class="jobs__imgs-item" src="./assets/img/content/jobs1.webp" alt=""><img class="jobs__imgs-item active" src="./assets/img/content/jobs2.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs3.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs4.webp" alt=""></div>
+                </div>
+                <div class="jobs__content">
+                  <h5 class="jobs__content-title">Покос травы в Иваново</h5>
+                  <ul class="jobs__content-lists">
+                    <li class="jobs__content-item">Высота травы: до 20 см</li>
+                    <li class="jobs__content-item">Размер участка: 15 соток</li>
+                    <li class="jobs__content-item">Время работы: 8 часов</li>
+                    <li class="jobs__content-item">Уборка: без уборки</li>
+                    <li class="jobs__content-item">Отдаленность от города: 20 км</li>
+                  </ul>
+                  <div class="jobs__price">Стоимость работ:<span class="jobs__price-number">2500 руб</span></div>
+                  <button class="jobs__btn">Заказать покос</button>
+                </div>
+              </div>
+            </div>
+            <div class="jobs-slickwrapper">
+              <div class="jobs__card">
+                <div class="jobs__pict">
+                  <div class="jobs__img"><img class="jobs__bigimg" src="./assets/img/content/jobs-big.webp" alt=""></div>
+                  <div class="jobs__imgs" style="transform: none !important"><img class="jobs__imgs-item" src="./assets/img/content/jobs1.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs2.webp" alt=""><img class="jobs__imgs-item active" src="./assets/img/content/jobs3.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs4.webp" alt=""></div>
+                </div>
+                <div class="jobs__content">
+                  <h5 class="jobs__content-title">Покос травы в Феофаново</h5>
+                  <ul class="jobs__content-lists">
+                    <li class="jobs__content-item">Высота травы: до 20 см</li>
+                    <li class="jobs__content-item">Размер участка: 15 соток</li>
+                    <li class="jobs__content-item">Время работы: 8 часов</li>
+                    <li class="jobs__content-item">Уборка: без уборки</li>
+                    <li class="jobs__content-item">Отдаленность от города: 20 км</li>
+                  </ul>
+                  <div class="jobs__price">Стоимость работ:<span class="jobs__price-number">2500 руб</span></div>
+                  <button class="jobs__btn">Заказать покос</button>
+                </div>
+              </div>
+            </div>
+            <div class="jobs-slickwrapper">
+              <div class="jobs__card">
+                <div class="jobs__pict">
+                  <div class="jobs__img"><img class="jobs__bigimg" src="./assets/img/content/jobs-big.webp" alt=""></div>
+                  <div class="jobs__imgs" style="transform: none !important"><img class="jobs__imgs-item" src="./assets/img/content/jobs1.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs2.webp" alt=""><img class="jobs__imgs-item" src="./assets/img/content/jobs3.webp" alt=""><img class="jobs__imgs-item active" src="./assets/img/content/jobs4.webp" alt=""></div>
+                </div>
+                <div class="jobs__content">
+                  <h5 class="jobs__content-title">Покос травы в Александрово</h5>
+                  <ul class="jobs__content-lists">
+                    <li class="jobs__content-item">Высота травы: до 20 см</li>
+                    <li class="jobs__content-item">Размер участка: 15 соток</li>
+                    <li class="jobs__content-item">Время работы: 8 часов</li>
+                    <li class="jobs__content-item">Уборка: без уборки</li>
+                    <li class="jobs__content-item">Отдаленность от города: 20 км</li>
+                  </ul>
+                  <div class="jobs__price">Стоимость работ:<span class="jobs__price-number">2500 руб</span></div>
+                  <button class="jobs__btn">Заказать покос</button>
+                </div>
+              </div>
+            </div>
+          </div><a class="jobs__show-all" href="/sample.html">Посмотреть все работы</a>
+        </div>
+        <div class="cost">
+          <div class="cost-inner">
+                    <div class="section-title --margin-bottom">
+                      <h3 class="section-title__name">Узнать стоимость покоса</h3>
+                    </div>
+            <form class="cost-items">
+              <div class="cost-items-inner">
+                <div class="cost-items-height">
+                  <p>Высота травы:</p>
+                  <select>
+                    <option>Высота травы</option>
+                  </select>
+                </div>
+                <div class="cost-items-square">
+                  <p>Площадь:</p>
+                  <select>
+                    <option>Площадь участка</option>
+                  </select>
+                </div>
+                <div class="cost-items-square">
+                  <p>Расстояние от города:</p>
+                  <select>
+                    <option>Сколько км от Кирова</option>
+                  </select>
+                </div>
+                <div class="cost-items-tel">
+                  <p>Телефон:</p>
+                  <input type="tel" name="tel" placeholder="Введите телефон">
+                </div>
+              </div><a href="*">Политика конфиденциальности</a>
+              <input type="submit" value="Получить расчёт">
+            </form>
+          </div>
+        </div>
+        <div class="phases">
+          <div class="phases__inner">
+                    <div class="section-title --margin-bottom">
+                      <h3 class="section-title__name">Этапы покоса травы</h3>
+                    </div>
+            <div class="phases__content">
+              <div class="phases__content-item">
+                <div class="phases__content-descr"><span>01</span>
+                  <div class="phases__content-dots">
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                  </div>
+                  <div class="phases__content-img --svg__phases_phone"></div>
+                  <p class="phases__content-text">Заявка</p>
+                </div>
+              </div>
+              <div class="phases__content-item">
+                <div class="phases__content-descr"><span>02</span>
+                  <div class="phases__content-dots">
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                  </div>
+                  <div class="phases__content-img --svg__phases_calc"></div>
+                  <p class="phases__content-text">Расчёт стоимости</p>
+                </div>
+              </div>
+              <div class="phases__content-item">
+                <div class="phases__content-descr"><span>03</span>
+                  <div class="phases__content-dots">
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                  </div>
+                  <div class="phases__content-img --svg__phases_car"></div>
+                  <p class="phases__content-text">Приезжаем косим</p>
+                </div>
+              </div>
+              <div class="phases__content-item">
+                <div class="phases__content-descr"><span>04</span>
+                  <div class="phases__content-dots">
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                  </div>
+                  <div class="phases__content-img --svg__phases_glasses"></div>
+                  <p class="phases__content-text">Принимаете работу</p>
+                </div>
+              </div>
+              <div class="phases__content-item">
+                <div class="phases__content-descr"><span>05</span>
+                  <div class="phases__content-dots">
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                    <div class="phases__content-dot"></div>
+                  </div>
+                  <div class="phases__content-img --svg__phases_wallet"></div>
+                  <p class="phases__content-text">Оплачиваете</p>
+                </div>
+              </div>
+            </div>
+            <p class="phases__request">Вы можете оставить заявку через форму на сайте или позвонив по телефону 7 922 000 00 00</p>
+            <div class="phases__content-link"><a class="phases__details" href="*">Подробнее о покосе травы</a></div>
+          </div>
+        </div>
+        <div class="discount">
+          <div class="discount__header">
+            <h3 class="discount__title">Акция</h3>
+            <div class="discount__arrows"></div>
+          </div>
+          <div class="discount__inner">
+            <div class="discount__sample">
+              <div class="discount__slickwrapp">
+                <div class="discount__card">
+                  <div class="discount__img-wrap"><img class="discount__img" src="./assets/img/content/discount.webp" alt=""></div>
+                  <div class="discount__content">
+                    <h5 class="discount__content-title">ПОЛУЧИТЬ СКИДКУ НА ОБЩИЙ ОБЬЕМ1</h5>
+                    <div class="discount__content-items">
+                      <div class="discount__content-items-img --svg__discount"></div>
+                      <ul class="discount__items">
+                        <li class="discount__item"><span>СКИДКА НА ОБЬЕМ</span></li>
+                        <li class="discount__item">Свыше 20 соток - 3%</li>
+                        <li class="discount__item">Свыше 50 соток - 5%</li>
+                        <li class="discount__item">Свыше 1 Га  - 10%</li>
+                      </ul>
+                    </div><a class="discount__btn" href="*">Получить расчет</a>
+                  </div>
+                </div>
+              </div>
+              <div class="discount__slickwrapp">
+                <div class="discount__card">
+                  <div class="discount__img-wrap"><img class="discount__img" src="./assets/img/content/discount.webp" alt=""></div>
+                  <div class="discount__content">
+                    <h5 class="discount__content-title">ПОЛУЧИТЬ СКИДКУ НА ОБЩИЙ ОБЬЕМ2</h5>
+                    <div class="discount__content-items">
+                      <div class="discount__content-items-img --svg__discount"></div>
+                      <ul class="discount__items">
+                        <li class="discount__item"><span>СКИДКА НА ОБЬЕМ</span></li>
+                        <li class="discount__item">Свыше 20 соток - 3%</li>
+                        <li class="discount__item">Свыше 50 соток - 5%</li>
+                        <li class="discount__item">Свыше 1 Га  - 10%</li>
+                      </ul>
+                    </div><a class="discount__btn" href="*">Получить расчет</a>
+                  </div>
+                </div>
+              </div>
+              <div class="discount__slickwrapp">
+                <div class="discount__card">
+                  <div class="discount__img-wrap"><img class="discount__img" src="./assets/img/content/discount.webp" alt=""></div>
+                  <div class="discount__content">
+                    <h5 class="discount__content-title">ПОЛУЧИТЬ СКИДКУ НА ОБЩИЙ ОБЬЕМ3</h5>
+                    <div class="discount__content-items">
+                      <div class="discount__content-items-img --svg__discount"></div>
+                      <ul class="discount__items">
+                        <li class="discount__item"><span>СКИДКА НА ОБЬЕМ</span></li>
+                        <li class="discount__item">Свыше 20 соток - 3%</li>
+                        <li class="discount__item">Свыше 50 соток - 5%</li>
+                        <li class="discount__item">Свыше 1 Га  - 10%</li>
+                      </ul>
+                    </div><a class="discount__btn" href="*">Получить расчет</a>
+                  </div>
+                </div>
+              </div>
+              <div class="discount__slickwrapp">
+                <div class="discount__card">
+                  <div class="discount__img-wrap"><img class="discount__img" src="./assets/img/content/discount.webp" alt=""></div>
+                  <div class="discount__content">
+                    <h5 class="discount__content-title">ПОЛУЧИТЬ СКИДКУ НА ОБЩИЙ ОБЬЕМ4</h5>
+                    <div class="discount__content-items">
+                      <div class="discount__content-items-img --svg__discount"></div>
+                      <ul class="discount__items">
+                        <li class="discount__item"><span>СКИДКА НА ОБЬЕМ</span></li>
+                        <li class="discount__item">Свыше 20 соток - 3%</li>
+                        <li class="discount__item">Свыше 50 соток - 5%</li>
+                        <li class="discount__item">Свыше 1 Га  - 10%</li>
+                      </ul>
+                    </div><a class="discount__btn" href="*">Получить расчет</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__columns">
+            <div class="footer__column">
+                    <div class="footer__columns-title">Виды покоса</div>
+                    <ul class="footer__ul">
+                      <li><a href="./under_construction.html">Покос травы триммером</a></li>
+                      <li><a href="./*">Покос бурьяна триммером</a></li>
+                      <li><a href="./*">Покос газонокосилкой</a></li>
+                      <li><a href="./*">Вырубка мелколесья</a></li>
+                      <li><a href="./*">Контроль качества</a></li>
+                    </ul>
+            </div>
+            <div class="footer__column">
+                    <div class="footer__columns-title">Информация</div>
+                    <ul class="footer__ul">
+                      <li><a href="./*">Как заказать покос</a></li>
+                      <li><a href="./*">Как оплатить</a></li>
+                      <li><a href="./*">Могу ли я не присутствовать</a></li>
+                      <li><a href="./*">Дополнительные услуги</a></li>
+                      <li><a href="./*">Для управляющих компаний</a></li>
+                    </ul>
+            </div>
+            <div class="footer__column">
+                    <div class="footer__columns-title">О нас</div>
+                    <ul class="footer__ul">
+                      <li><a href="./about.html">О компании</a></li>
+                      <li><a href="./sample.html">Наши работы</a></li>
+                      <li><a href="./request.html">Отзывы</a></li>
+                      <li><a href="./discount-page.html">Акции</a></li>
+                      <li><a href="./contacts.html">Контакты</a></li>
+                    </ul>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-descr">
+              <p>Copyright  © Покос травы, 2007 - 2021 гг.</p>
+              <p>Все права защищены</p>
+            </div>
+            <div class="footer__copyright-tel">8 922 000 00 00</div>
+            <div class="footer__copyright-link"><a class="footer__copyright-link-logo" href="/">Покос травы</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

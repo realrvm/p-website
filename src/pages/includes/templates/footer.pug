@@ -1,0 +1,28 @@
+- const types = [{title:"Покос травы триммером", link: "under_construction.html"},{title:"Покос бурьяна триммером", link: "*"},{title:"Покос газонокосилкой", link: "*"},{title:"Вырубка мелколесья", link: "*"},{title:"Контроль качества", link: "*"},]
+- const infos = [{title:"Как заказать покос", link: "*"},{title:"Как оплатить", link: "*"},{title:"Могу ли я не присутствовать", link: "*"},{title:"Дополнительные услуги", link: "*"},{title:"Для управляющих компаний", link: "*"},]
+- const abouts = [{title:"О компании", link: "about.html"},{title:"Наши работы", link: "sample.html"},{title:"Отзывы", link: "request.html"},{title:"Акции", link: "discount-page.html"},{title:"Контакты", link: "contacts.html"},]
+
+mixin footer_columns (title, content)
+    .footer__columns-title= title
+    ul.footer__ul
+        each item in content
+            li
+                a(href=`./${item.link}`)= item.title
+
+footer.footer
+    .footer__inner
+        .footer__columns
+            .footer__column
+                +footer_columns("Виды покоса",  types)
+            .footer__column
+                +footer_columns("Информация",  infos)
+            .footer__column
+                +footer_columns("О нас",  abouts)
+        .footer__copyright
+            .footer__copyright-descr
+                p Copyright  © Покос травы, 2007 - 2021 гг.
+                p Все права защищены
+            .footer__copyright-tel
+                | 8 922 000 00 00
+            .footer__copyright-link
+                a.footer__copyright-link-logo(href="/") Покос травы

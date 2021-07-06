@@ -1,0 +1,16 @@
+include ../mixins/section-title
+
+.gallery
+    .gallery__inner
+        +section_title("Примеры наших работ", true)
+        .gallery__menu
+            button.gallery__btn(type="button" data-filter="all") Все
+            button.gallery__btn(type="button" data-filter=".weeds") Бурьян
+            button.gallery__btn(type="button" data-filter=".lawn") Газон
+            button.gallery__btn(type="button" data-filter=".felling") Вырубка
+            button.gallery__btn.gallery__btn-last(type="button" data-filter=".clearing") Расчистка участка
+        .gallery__content
+            include ../sample/lawn
+            include ../sample/weeds
+            include ../sample/felling
+            include ../sample/clearing

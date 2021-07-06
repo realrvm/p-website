@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.--just-space {
+    justify-content: space-between;
+}
+
+.--just-center {
+    justify-content: center;
+}
+
+.--just-end {
+    justify-content: flex-end;
+}
+
+.--align-str {
+    align-items: stretch;
+}
+
+.--align-center {
+    align-items: center;
+}
+
+.--align-end {
+    align-items: flex-end;
+}
+
+.--dir-col {
+    flex-direction: column;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}

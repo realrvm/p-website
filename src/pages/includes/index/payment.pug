@@ -1,0 +1,24 @@
+include ../mixins/section-title
+
+.cost
+    .cost-inner
+        +section_title("Узнать стоимость покоса", true)
+        form.cost-items
+            .cost-items-inner
+                .cost-items-height
+                    p Высота травы:
+                    select
+                        option Высота травы
+                .cost-items-square
+                    p Площадь:
+                    select
+                        option Площадь участка
+                .cost-items-square
+                    p Расстояние от города:
+                    select
+                        option Сколько км от Кирова
+                .cost-items-tel
+                    p Телефон:
+                    input(type='tel' name="tel" placeholder="Введите телефон" )
+            a(href="*") Политика конфиденциальности
+            input(type="submit" value="Получить расчёт")

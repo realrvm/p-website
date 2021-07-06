@@ -1,0 +1,21 @@
+.company {
+    margin-top: 29px;
+    margin-bottom: 48px;
+
+    &__inner {
+        @include container;
+    }
+
+    &__descr {
+        font-family: "Prompt", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 172%;
+        color: var(--color-gray1);
+    }
+
+    @include media-tablet {
+        margin-top: 54px;
+        margin-bottom: 96px;
+    }
+}

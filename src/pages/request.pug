@@ -1,0 +1,11 @@
+extends common/layout
+
+block vars
+  -const pageTitle="Request page"
+
+block content
+    .wrapper
+        include includes/templates/header
+        .main
+            include includes/request/requests
+        include includes/templates/footer

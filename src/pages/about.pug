@@ -1,0 +1,15 @@
+extends common/layout
+
+block vars
+  -const pageTitle="About company"
+
+block content
+    .wrapper
+        include includes/templates/header
+        .main
+            include includes/about/company
+            include includes/about/clients
+            include includes/about/values
+            include includes/about/confidence
+            include includes/about/samples
+        include includes/templates/footer

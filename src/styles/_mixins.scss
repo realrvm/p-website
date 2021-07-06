@@ -1,0 +1,41 @@
+.section-title {
+    position: relative;
+
+    &__name {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: var(--color-gray1);
+        padding-left: 23px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 21px;
+        background: var(--color-green1);
+        top: 4px;
+        left: 0px;
+    }
+
+    @include media-tablet {
+        &__name {
+            font-size: 34px;
+        }
+
+        &::before {
+            height: 29px;
+            top: 6px;
+        }
+    }
+}
+
+.--margin-bottom {
+    margin-bottom: 22px;
+
+    @include media-tablet {
+        margin-bottom: 45px;
+    }
+}

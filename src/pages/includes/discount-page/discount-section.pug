@@ -1,0 +1,27 @@
+// discount-section page  для странички discount-section-page
+include ../mixins/section-title
+
+- const discounts = [{title: "ПОЛУЧИТЬ СКИДКУ НА ОБЩИЙ ОБЬЕМ", img: "sales",item1: "Свыше 20 соток - 3%", item2: "Свыше 50 соток - 5%",item3: "Свыше 1 Га  - 10%", descr: "Заказывать большие обьемы или сразу несколько участков - это выгодно.  Предложите своему соседу услугу покоса и получите скидку за обьем."},{title: "Скидка для управляющих компаний", img: "sales", item1: "1 сотка - 160 - 200 руб", item2: "Свыше 50 соток - 5%",item3: "Свыше 1 Га  - 10%", descr: "Заказывать большие обьемы или сразу несколько участков - это выгодно. Предложите своему соседу услугу покоса и получите скидку за обьем."},]
+
+mixin discount-section_card(title, img, item1, item2, item3 ,descr)
+    .discount-section__card
+        .discount-section__img-wrap
+            img.discount-section__img(src=`./assets/img/content/${img}.webp` alt="")
+        .discount-section__descr
+            h5.discount-section__title= title
+            .discount-section__list
+                .discount-section__list-img.--svg__discount
+                ul.discount-section__items
+                    li.discount-section__item: span СКИДКА НА ОБЬЕМ
+                    li.discount-section__item= item1
+                    li.discount-section__item= item2
+                    li.discount-section__item= item3
+            p.discount-section__content= descr
+            a.discount-section__btn(href="*") Заказать расчёт
+
+section.discount-section
+    .discount-section__inner
+        +section_title("Акции", true)
+        .discount-section__inner
+            each card in discounts
+                +discount-section_card(card.title, card.img, card.item1, card.item2,card.item3,card.descr)

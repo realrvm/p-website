@@ -1,0 +1,17 @@
+include ../mixins/section-title
+
+- const coords = [{img: "cont_tel", descr: "8 922 000 00 00"},{img: "cont_mail", descr: "info@pokos43.ru"},{img: "cont_cal", descr: "Ежедневно с 8:00 до 19:00"},{img: "cont_map", descr: "г.*, ул.профсоюзная 1а, офис 605"},]
+
+mixin coord_items(img, descr)
+    .coordinates__item
+        .coordinates__item-img(class=`--svg__${img}`)
+        span.coordinates__item-descr= descr
+
+.coordinates
+    .coordinates__inner
+        +section_title("Контакты",true)
+        .coordinates__items
+            each item in coords
+                +coord_items(item.img, item.descr)
+        .coordinates__map
+            img.coordinates__map-img(src="./assets/img/bigmap.webp" alt="")

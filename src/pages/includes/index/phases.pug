@@ -1,0 +1,21 @@
+include ../mixins/section-title
+
+- phases = [{img: "phases_phone", descr: "Заявка", count: "01"},{img: "phases_calc", descr: "Расчёт стоимости", count: "02"},{img: "phases_car", descr: "Приезжаем косим", count: "03"},{img: "phases_glasses", descr: "Принимаете работу", count: "04"},{img: "phases_wallet", descr: "Оплачиваете",count : "05"}]
+
+.phases
+    .phases__inner
+        +section_title("Этапы покоса травы", true)
+        .phases__content
+            each phase in phases
+                .phases__content-item
+                    .phases__content-descr
+                        span #{phase.count}
+                        .phases__content-dots
+                            .phases__content-dot
+                            .phases__content-dot
+                            .phases__content-dot
+                        .phases__content-img(class=`--svg__${phase.img}`)
+                        p.phases__content-text= phase.descr
+        p.phases__request Вы можете оставить заявку через форму на сайте или позвонив по телефону 7 922 000 00 00
+        .phases__content-link
+            a.phases__details(href="*") Подробнее о покосе травы

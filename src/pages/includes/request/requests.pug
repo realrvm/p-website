@@ -1,0 +1,21 @@
+include ../mixins/section-title
+
+mixin card_request(name, descr, first, second ,third)
+    .requests__card
+        h5.requests__title= name
+        p.requests__descr= descr
+        .requests__images
+            img(src=`./assets/img/content/${first}.webp` alt="")
+            img(src=`./assets/img/content/${second}.webp` alt="")
+            img(src=`./assets/img/content/${third}.webp` alt="")
+        a.requests__show(href="*") Посмотреть отчёт
+
+- const requestsCards = [{name:"Максим", descr:"Заказывал покос травы у Андрея на дачном участке в Боровице, приехали через 2 часа и выполнили всю работу. Ребята выкосили участок, и сгребли всю траву в кучу. Работа заняла 2 часа. Я остался доволен, закажу снова покос как трава вырастет.", first:"jobs1", second: "jobs2", third:"jobs3"},{name:"Кирилл", descr:"Заказывал покос травы у Андрея на дачном участке в Боровице, приехали через 2 часа и выполнили всю работу. Ребята выкосили участок, и сгребли всю траву в кучу. Работа заняла 2 часа. Я остался доволен, закажу снова покос как трава вырастет.",  first:"jobs1", second: "jobs2", third:"jobs3"},{name:"Александр", descr:"Заказывал покос травы у Андрея на дачном участке в Боровице, приехали через 2 часа и выполнили всю работу. Ребята выкосили участок, и сгребли всю траву в кучу. Работа заняла 2 часа. Я остался доволен, закажу снова покос как трава вырастет.",  first:"jobs1", second: "jobs2", third:"jobs3"},{name:"Феофан", descr:"Заказывал покос травы у Андрея на дачном участке в Боровице, приехали через 2 часа и выполнили всю работу. Ребята выкосили участок, и сгребли всю траву в кучу. Работа заняла 2 часа. Я остался доволен, закажу снова покос как трава вырастет.",  first:"jobs1", second: "jobs2", third:"jobs3"}]
+
+section.requests
+    .requests__inner
+        +section_title("Отзывы", true)
+        .requests__cards
+            each card in requestsCards
+                +card_request(card.name, card.descr, card.first, card.second, card.third)
+        button.requests__btn Оставить отзыв

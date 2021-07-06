@@ -1,0 +1,12 @@
+extends common/layout
+
+block vars
+  -const pageTitle="Contact page"
+
+block content
+    .wrapper
+        include includes/templates/header
+        .main
+            include includes/contacts/coordinates
+            include includes/contacts/requisites
+        include includes/templates/footer

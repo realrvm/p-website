@@ -1,0 +1,250 @@
+.questions {
+    width: 100%;
+    background: var(--color-green1);
+    padding: 33px 0;
+    margin-bottom: 33px;
+
+    &__inner {
+        @include container;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include media-tablet {
+        margin-bottom: 67px;
+    }
+
+    @include media-custom(1200px) {
+        padding: 67px 0 55px;
+
+        &__inner {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.questions__steps {
+    flex: 1;
+
+    &-title {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin-bottom: 21px;
+        position: relative;
+        padding-left: 23px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: var(--color-white);
+            height: 22px;
+            width: 6px;
+            left: 0;
+            top: 3px;
+            bottom: 0;
+            margin: auto 0;
+        }
+    }
+
+    &-items {
+        margin-bottom: 27px;
+    }
+
+    &-item {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-white);
+        margin-left: 20px;
+        position: relative;
+        margin-bottom: 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -19px;
+            top: 11px;
+            height: 1px;
+            width: 9px;
+            background: var(--color-white);
+        }
+    }
+
+    &-subtitle {
+        color: var(--color-white);
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 36px;
+    }
+
+    @include media-desktop {
+        flex: 7;
+
+        &-title {
+            font-size: 34px;
+            text-align: left;
+            margin-bottom: 42px;
+
+            &:before {
+                height: 30px;
+            }
+        }
+
+        &-items {
+            margin-bottom: 65px;
+        }
+
+        &-subtitle {
+            margin-bottom: 73px;
+        }
+    }
+}
+
+.questions__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    @include media-tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
+    }
+}
+
+.questions__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px 39px 20px;
+    width: 222px;
+    height: 222px;
+    background: var(--color-green60);
+    position: relative;
+    margin-bottom: 20px;
+
+    &-descr {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--color-white);
+        text-align: center;
+    }
+
+    &-img {
+        @include bg;
+        width: 91px;
+        height: 91px;
+    }
+
+    &-counter {
+        position: absolute;
+        top: 5px;
+        right: 11px;
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        color: var(--color-green1);
+    }
+
+    @include media-tablet {
+        margin-bottom: 0;
+        & + & {
+            margin-left: 18px;
+        }
+    }
+}
+.questions__form {
+    flex: 1;
+    padding: 33px 39px 16px;
+    background: var(--color-green60);
+    max-width: 500px;
+    align-self: center;
+
+    &-title {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin-bottom: 28px;
+    }
+
+    &-subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--color-white);
+        margin-bottom: 14px;
+    }
+
+    &-descr {
+        font-weight: 300;
+        font-size: 16px;
+        color: var(--color-white);
+        margin-bottom: 22px;
+    }
+
+    &-name,
+    &-tel {
+        height: 72px;
+        width: 100%;
+        background: var(--color-green1);
+        color: var(--color-white);
+        margin-bottom: 20px;
+        padding: 26px 21px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+
+        &::placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            color: var(--color-white);
+        }
+    }
+
+    &-btn {
+        height: 74px;
+        width: 100%;
+        background: var(--color-green1);
+        color: var(--color-white);
+        font-family: Prompt;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all ease 0.2s;
+
+        &:hover {
+            background: var(--color-green60);
+        }
+    }
+
+    @include media-tablet {
+        flex: 5;
+        margin-left: 18px;
+        padding: 67px 56px 32px;
+
+        &-title {
+            margin-bottom: 40px;
+        }
+
+        &-descr {
+            margin-bottom: 45px;
+        }
+    }
+
+    @include media-custom(1200px) {
+        align-self: flex-start;
+    }
+}

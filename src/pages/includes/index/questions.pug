@@ -1,0 +1,26 @@
+- const questionCards = [{img: "consult", descr: "Консультация", count: 1}, {img: "scythe", descr: "Покос", count: 2}, {img: "wallet", descr: "Прием работ и оплата", count: 3}]
+
+.questions
+    .questions__inner
+        .questions__steps
+            h2.questions__steps-title Как мы работаем
+            .questions__steps-items
+                p.questions__steps-item Выкашеваем участки от 5 соток
+                p.questions__steps-item Закажи покос и получи оперативную и качествееную работу
+            h3.questions__steps-subtitle Три простых шага до покоса
+            .questions__cards
+                each cardImg in questionCards
+                    .questions__card
+                        .questions__card-img(class=`--svg__${cardImg.img}`)
+                        p.questions__card-descr= cardImg.descr
+                        .questions__card-counter
+                            | #{cardImg.count}
+
+        .questions__form
+            h3.questions__form-title Остались вопросы?
+            h5.questions__form-subtitle Заполните форму!
+            p.questions__form-descr И получите консультацию специалиста
+            form.questions__form-inner
+                input.questions__form-name(type="text" name="name" placeholder="Имя")
+                input.questions__form-tel(type="tel" name="tel" placeholder="Телефон")
+                button.questions__form-btn Заказать звонок

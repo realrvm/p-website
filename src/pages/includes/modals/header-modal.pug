@@ -1,0 +1,8 @@
+- const typesOfheader= ["Покос травы триммером", "Покос бурьяна триммером", "Покос газонокосилкой", "Вырубка мелколесья" , "Уборка скошеной травы"]
+
+.header-modal(data-headermodal)
+    .header-modal__inner
+        ul.header-modal__ul
+            each type in typesOfheader
+                li
+                    a.header-modal__type(href="*")= type

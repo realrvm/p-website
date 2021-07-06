@@ -1,0 +1,38 @@
+.samples {
+  margin-bottom: 35px;
+
+  &__inner {
+      @include container;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 43px;
+
+    a {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    font-family: "Prompt", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: inherit;
+    display: block;
+    margin: 0 auto;
+
+    &:hover {
+      color: var(--color-green1);
+      text-decoration: none;
+    }
+  }
+
+  @include media-tablet {
+    margin-bottom: 70px;
+  }
+}

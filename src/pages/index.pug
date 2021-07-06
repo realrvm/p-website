@@ -1,0 +1,18 @@
+extends common/layout
+
+block vars
+  -const pageTitle="Main page"
+
+block content
+    .wrapper.flex.--dir-col
+        include includes/templates/header
+        .main
+            include includes/index/banner
+            include includes/modals/banner-modal
+            include includes/index/prices
+            include includes/index/questions
+            include includes/index/jobs
+            include includes/index/payment
+            include includes/index/phases
+            include includes/index/discount
+        include includes/templates/footer

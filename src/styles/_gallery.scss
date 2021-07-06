@@ -1,0 +1,38 @@
+.gallery {
+    &__inner {
+        @include container;
+    }
+
+    &__menu {
+        margin-bottom: 30px;
+    }
+    &__btn {
+        font-family: "Prompt", sans-serif;
+        font-size: 16px;
+        color: var(--color-gray1);
+        width: 119px;
+        height: 41px;
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-bottom: 30px;
+
+        &.mixitup-control-active {
+            color: var(--color-white);
+            background: var(--color-green1);
+        }
+    }
+    &__btn-last {
+        width: 170px;
+    }
+
+    @include media-tablet {
+        &__menu {
+            margin-bottom: 60px;
+        }
+
+        &__btn {
+            margin-bottom: 0;
+        }
+    }
+}

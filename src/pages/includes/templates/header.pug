@@ -1,0 +1,16 @@
+header.header
+    .header__inner.container
+        .header__menu
+            .header__logo
+                a.header__logo-link(href="/")
+                    .header__logo-img.--svg__logo
+            nav.header__nav(data-headernav)
+                .header__nav-img.--svg__nav
+                span.header__nav-descr Виды покоса
+                include ../modals/header-modal
+        .header__call
+            a.header__call-link(href="*") Заказать звонок
+            .header__call-number
+                svg.header__call-imgs(width="16" height="17")
+                    use(xlink:href="./assets/img/sprite.svg#phone")
+                span.header__call-descr 8 922 000 00 00

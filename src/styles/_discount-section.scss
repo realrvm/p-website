@@ -1,0 +1,106 @@
+.discount-section {
+    padding: 50px 0;
+
+    &__inner {
+        @include container;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 39px;
+    }
+
+    &__img-wrap {
+        max-width: 600px;
+        max-height: 400px;
+        margin-bottom: 30px;
+    }
+    &__img {
+        object-fit: contain;
+    }
+
+    &__content {
+        max-width: 504px;
+        font-family: "Prompt", sans-serif;
+        font-size: 16px;
+        line-height: 174%;
+        margin-bottom: 42px;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: var(--color-gray1);
+        margin-bottom: 27px;
+    }
+
+    &__list {
+        display: flex;
+
+        &-img {
+            margin-right: 20px;
+            align-self: flex-start;
+            margin-top: 12px;
+            width: 71px;
+            height: 49px;
+            @include bg;
+        }
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    &__item {
+        @extend %body16-regular;
+        margin-bottom: 7px;
+
+        span {
+            @extend %body16-propmt;
+            color: var(--color-green1);
+            margin-bottom: 7px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        @extend %body16-propmt;
+        color: var(--color-white);
+        padding: 15px 60px;
+        background: var(--color-green1);
+        cursor: pointer;
+        text-align: center;
+        max-width: 320px;
+        white-space: nowrap;
+        transition: all ease 0.2s;
+
+        &:hover {
+            background: var(--color-green60);
+        }
+    }
+
+    @include media-tablet {
+        align-items: center;
+
+        &__card {
+            flex-direction: row;
+            margin-bottom: 63px;
+        }
+
+        &__img-wrap {
+            margin-right: 60px;
+            margin-bottom: 0;
+        }
+    }
+}
